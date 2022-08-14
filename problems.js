@@ -60,7 +60,13 @@ const combineArrays = (arr1, arr2) => {
     calling this method won't permanently change, also known as **mutate**,
     either array. */
   // Zach's code here
+
+  const arr3 = arr1.concat(arr2);
+  return arr3;  
+
 };
+console.log(combineArrays([1,2,3], [4,5,6]))
+
 const wordWithinArray = (word, arr) => {
   /* Takes in both a word and an array of words as arguments and returns a
     boolean that returns true if that string is located inside of the array, or

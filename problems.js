@@ -95,7 +95,14 @@ const echo = (str) => {
     echo("hey"); // => returns "HEY ... hey ... hey"
     echo("JUMp"); // => returns "JUMP ... JUMp ... jump" */
   // Zach's code here
+  const allCaps = str.toUpperCase();
+  const original = str;
+  const noCaps = str.toLowerCase();
+
+  return `${allCaps} ... ${original} ... ${noCaps}`
 };
+console.log(echo("Zach!"))
+
 const fizzBuzz = (max) => {
   /* Takes a number, max and returns an array that contains every number from
     0 to max (not inclusive) that is divisible by either 3 or 5, **but not both**. */

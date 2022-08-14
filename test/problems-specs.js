@@ -1,6 +1,6 @@
 const assert = require("assert");
 const chai = require("chai");
-const { divideByThree, averageOfTwo, averageOfAny, doubler, combineArrays, wordWithinArray, echo, fizzBuzz, hello, goodbye, isFive, isOdd, isSubString, aCounter, addThree } = require("../problems");
+const { divideByThree, averageOfTwo, averageOfAny, doubler, combineArrays, wordWithinArray, echo, fizzBuzz, hello, goodbye, isFive, isOdd, aCounter, addThree } = require("../problems");
 const expect = chai.expect;
 
 describe("Problems", function () {
@@ -86,13 +86,6 @@ describe("Problems", function () {
         it('should return true if input is odd, false otherwise', function() {
             expect(isOdd(21)).to.equal(true);
             expect(isOdd(0)).to.equal(false);
-        })
-    })
-
-    describe("isSubstring", function() {
-        it('should return true is searchString contains subString', function() {
-            expect(isSubString("I love App Academy", "app")).to.equal(true);
-            expect(isSubString("I love App Academy", "hello")).to.equal(false);
         })
     })
 

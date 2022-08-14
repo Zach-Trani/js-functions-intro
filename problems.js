@@ -151,32 +151,35 @@ const isOdd = (num) => {
   /* Takes in a number and returns `true` if the number is odd and returns
     `false` otherwise. Try writing this with and without `if` statements */
   // Zach's code here
+  if (num % 2 === 1){
+    return true
+  }
+  return false
 };
+console.log(isOdd(35))
+
 const isSubString = (searchString, subString) => {
   /* Takes in two strings, `searchString` and `subString`. Should return
     `true` if `subString` is a part of the`searchString`, regardless of upper
-    or lower case, and `false` if otherwise. */
+    or lower case, and `false` if otherwise. hint look up the includes() method. */
   // Zach's code here
 };
+
 const aCounter = (word) => {
   /* Takes in a word and returns the number of a's within that word. Counts
     both lowercase (a) and uppercase (A). Your job is to translate the following
     function to use a `for` loop instead of the `while` loop it is currently
     using. */
-  /* 
-    let index = 0;
-    let count = 0;
-    while (index < word.length) {
-        let char = word[index];
-        if (char === "a" || char === "A") {
-        count += 1;
-        }
-        index++;
+    count = 0;
+  for (let i = 0; i < word.length; i++){
+    if (word[i] === "a" || word[i] === "A"){
+      count++
     }
-    return count;
-    */
-  // Your code here
+  }
+  return count
 };
+console.log(aCounter("Arianna"))
+
 
 module.exports = {
   addThree,

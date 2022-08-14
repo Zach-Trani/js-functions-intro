@@ -72,7 +72,23 @@ const wordWithinArray = (word, arr) => {
     boolean that returns true if that string is located inside of the array, or
     false if it does not. Use `Array.indexOf`. */
   // Zach's code here
+
+  // method 1
+  // for (let i = 0; i  < arr.length; i++){
+  //   if (arr[i] === word) {
+  //       return true
+  //   }
+  // }
+  // return false
+
+  // method 2
+  if (arr.indexOf(word) === -1) {
+  return false;
+  }
+  else {return true}
 };
+console.log(wordWithinArray("Hi",["Hey","Hello","Hi"]))
+
 const echo = (str) => {
   /* Takes in a string and returns that string "echo-ized". E.g. 
     echo("Mom!"); // => returns "MOM! ... Mom! ... mom!"

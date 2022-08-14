@@ -122,41 +122,31 @@ const fizzBuzz = (max) => {
 };
 console.log(fizzBuzz(20))
 
-// const doubler = (nums) => {
-//   /* Takes an array of numbers and returns a new array where every element of
-//     the original array is multiplied by 2. */
-//   // Zach's code here
-// ``
-//   let arrayDoubled = []
-
-//   for (let i = 0; i < nums.length; i++){
-//     const numDoubled = nums[i]*2
-//     arrayDoubled.push(numDoubled)
-//   }
-
-//   return arrayDoubled;
-
-// };
-// console.log(doubler([1,2,3]))
-
-
-
-
-
-
 const hello = (name) => {
   /* Takes in a string name and returns a string saying "Hello, " to that name. */
   // Zach's code here
+  return `Hello, ${name}`
 };
+console.log(hello("Zach"))
+
 const goodbye = (name) => {
   /* Takes in a string name and returns a string saying "Bye, " to that name. */
   // Zach's code here
+  return `Bye, ${name}`
 };
+console.log(goodbye("Zach"))
+
 const isFive = (num) => {
   /* Takes in a number, num, and returns `true` if a number is equal to 5 and
     `false` if it is not. */
   // Zach's code here
+  if (num === 5){
+    return true
+  }
+  return false
 };
+console.log(isFive(5))
+
 const isOdd = (num) => {
   /* Takes in a number and returns `true` if the number is odd and returns
     `false` otherwise. Try writing this with and without `if` statements */

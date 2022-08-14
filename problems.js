@@ -40,7 +40,20 @@ const doubler = (nums) => {
   /* Takes an array of numbers and returns a new array where every element of
     the original array is multiplied by 2. */
   // Zach's code here
+``
+  let arrayDoubled = []
+
+  for (let i = 0; i < nums.length; i++){
+    const numDoubled = nums[i]*2
+    arrayDoubled.push(numDoubled)
+  }
+
+  return arrayDoubled;
+
 };
+console.log(doubler([1,2,3]))
+
+
 const combineArrays = (arr1, arr2) => {
   /* Takes in two arrays of numbers and returns the two arrays combined into
     a single array. **Hint**: Use the `Array.concat` method but be aware that
